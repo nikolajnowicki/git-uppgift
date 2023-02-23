@@ -1,0 +1,67 @@
+// -------------------------------------------------- //
+// Mobile                                             //
+// -------------------------------------------------- //
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 20px;
+}
+
+input {
+  border: solid black 1px;
+  outline: none;
+  background: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 5px;
+}
+
+.input-item {
+  width: 250px;
+  height: 25px;
+  font-size: 1.2rem;
+}
+
+.input-amount {
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+::placeholder {
+  color: gray;
+}
+
+// BUTTONS //
+
+.add-button {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  top: 10px;
+}
+
+// -------------------------------------------------- //
+// Tablet                                             //
+// -------------------------------------------------- //
+
+@media screen and (min-width: 768px) {
+}
+
+// -------------------------------------------------- //
+// Desktop                                            //
+// -------------------------------------------------- //
+
+@media screen and (min-width: 1024px) {
+}
