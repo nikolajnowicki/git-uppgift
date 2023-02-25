@@ -36,6 +36,7 @@ function renderList() {
   const sortedList = incompleteItems.concat(completedItems);
   for (const item of sortedList) {
     const listItem = document.createElement("li");
+    listItem.classList.add("shopping-item"); // add the class name "shopping-item"
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.checked = item.done;

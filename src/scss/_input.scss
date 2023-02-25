@@ -10,14 +10,14 @@
 }
 
 input {
-  border: solid black 1px;
+  border: 0px;
+  border-bottom: solid black 1px;
   outline: none;
   background: none;
   box-shadow: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 5px;
 }
 
 .input-item {
@@ -39,7 +39,7 @@ input::-webkit-inner-spin-button {
 }
 
 ::placeholder {
-  color: gray;
+  color: rgb(66, 66, 66);
 }
 
 // BUTTONS //
@@ -50,6 +50,7 @@ input::-webkit-inner-spin-button {
   width: 100%;
   height: 30px;
   top: 10px;
+  margin-bottom: 30px;
 }
 
 // -------------------------------------------------- //
