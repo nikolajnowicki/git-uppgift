@@ -1,4 +1,8 @@
-import { ToBuy } from "./models/ListItem";
+export {};
+
+class ToBuy {
+  constructor(public name: string, public done: boolean) {}
+}
 
 const addBtn = document.getElementById("add-button") as HTMLButtonElement;
 const shopField = document.getElementById("name") as HTMLInputElement;
