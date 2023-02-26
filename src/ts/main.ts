@@ -1,6 +1,4 @@
-export {};
-
-class ToBuy {
+export class ToBuy {
   constructor(public name: string, public done: boolean) {}
 }
 
@@ -26,7 +24,7 @@ addBtn.addEventListener("click", () => {
   }
 });
 
-function renderList() {
+export function renderList() {
   listContainer.innerHTML = "";
   const completedItems: ToBuy[] = [];
   const incompleteItems: ToBuy[] = [];
@@ -65,7 +63,7 @@ function renderList() {
   }
 }
 
-function toggleItem(item: ToBuy) {
+export function toggleItem(item: ToBuy) {
   if (item.done) {
     const index = list.indexOf(item);
     list.splice(index, 1);
@@ -74,6 +72,6 @@ function toggleItem(item: ToBuy) {
   }
 }
 
-function saveList() {
+export function saveList() {
   localStorage.setItem("shoppingList", JSON.stringify(list));
 }
